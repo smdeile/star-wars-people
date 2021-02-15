@@ -1,0 +1,10 @@
+.text {
+  color: yellow;
+  overflow-wrap: anywhere;
+}
+.comment {
+  color: rgb(247, 198, 133);
+}
+.commentItem::marker {
+  color: yellow;
+}

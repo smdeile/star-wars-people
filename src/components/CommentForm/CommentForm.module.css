@@ -1,0 +1,21 @@
+.button {
+  background-color: rgb(26, 3, 23);
+  color: yellow;
+}
+.textarea {
+  resize: none;
+  background-color: rgb(231, 231, 188);
+  color: black;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.textarea::placeholder {
+  color: rgba(85, 85, 51, 0.5);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
