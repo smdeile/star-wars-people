@@ -22,14 +22,12 @@ const App = () => {
         setPeople(people);
       } catch (err) {
         setError(err);
-        setLoading(false);
       } finally {
         setLoading(false);
       }
     }
-    setLoading(false);
+
     setTimeout(() => {
-      setLoading(true);
       fetchPeopleFromAPI();
     }, 2000);
   }, []);
@@ -55,12 +53,12 @@ const App = () => {
   return (
     <Wrapper>
       <>
-        {isLoading && <h2 style={styleYellow}>Loading... Please wait</h2>}
-        {!isLoading && !people?.length > 0 && (
+        {isLoading && !people?.length && (
           <h2 style={stylesTitle}>
             A long time ago in a galaxy far, far away…
           </h2>
         )}
+        {isLoading && <h2 style={styleYellow}>Loading... Please wait</h2>}
         {people.length > 0 && (
           <PeoplesList
             people={people}
