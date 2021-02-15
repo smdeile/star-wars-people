@@ -4,7 +4,7 @@ import CommentForm from "../CommentForm/CommentForm";
 import Comments from "../Comments/Comments";
 import css from "./PeoplesList.module.css";
 
-const PeopleList = ({ people, comments }) => {
+const PeopleList = ({ people, onSubmit, comments }) => {
   function findComment(name) {
     return comments.find((el) => el.name === name);
   }
@@ -15,7 +15,7 @@ const PeopleList = ({ people, comments }) => {
         <li key={name} className={css.listItem}>
           <div className={css.card}>
             <PeopleItem name={name} birth={birth_year} />
-            <CommentForm name={name} comments={comments} />
+            <CommentForm name={name} onSubmit={onSubmit} />
             {findComment(name) && <Comments comments={findComment(name)} />}
           </div>
         </li>
