@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/star-wars-people/static/css/main.d12c8247.chunk.css",
-    "main.js": "/star-wars-people/static/js/main.2c2b3d9d.chunk.js",
-    "main.js.map": "/star-wars-people/static/js/main.2c2b3d9d.chunk.js.map",
+    "main.css": "/star-wars-people/static/css/main.972acced.chunk.css",
+    "main.js": "/star-wars-people/static/js/main.8d5534e2.chunk.js",
+    "main.js.map": "/star-wars-people/static/js/main.8d5534e2.chunk.js.map",
     "runtime-main.js": "/star-wars-people/static/js/runtime-main.5582ed1d.js",
     "runtime-main.js.map": "/star-wars-people/static/js/runtime-main.5582ed1d.js.map",
-    "static/js/2.cda0ee9d.chunk.js": "/star-wars-people/static/js/2.cda0ee9d.chunk.js",
-    "static/js/2.cda0ee9d.chunk.js.map": "/star-wars-people/static/js/2.cda0ee9d.chunk.js.map",
+    "static/js/2.d59ef047.chunk.js": "/star-wars-people/static/js/2.d59ef047.chunk.js",
+    "static/js/2.d59ef047.chunk.js.map": "/star-wars-people/static/js/2.d59ef047.chunk.js.map",
     "index.html": "/star-wars-people/index.html",
-    "static/css/main.d12c8247.chunk.css.map": "/star-wars-people/static/css/main.d12c8247.chunk.css.map",
-    "static/js/2.cda0ee9d.chunk.js.LICENSE.txt": "/star-wars-people/static/js/2.cda0ee9d.chunk.js.LICENSE.txt",
+    "static/css/main.972acced.chunk.css.map": "/star-wars-people/static/css/main.972acced.chunk.css.map",
+    "static/js/2.d59ef047.chunk.js.LICENSE.txt": "/star-wars-people/static/js/2.d59ef047.chunk.js.LICENSE.txt",
     "static/media/Star_Wars_Logo.dba53346.svg": "/star-wars-people/static/media/Star_Wars_Logo.dba53346.svg",
     "static/media/Wrapper.module.css": "/star-wars-people/static/media/mainBackground.1a04a929.png",
     "static/media/photoSercret.bdb0c322.png": "/star-wars-people/static/media/photoSercret.bdb0c322.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5582ed1d.js",
-    "static/js/2.cda0ee9d.chunk.js",
-    "static/css/main.d12c8247.chunk.css",
-    "static/js/main.2c2b3d9d.chunk.js"
+    "static/js/2.d59ef047.chunk.js",
+    "static/css/main.972acced.chunk.css",
+    "static/js/main.8d5534e2.chunk.js"
   ]
 }
