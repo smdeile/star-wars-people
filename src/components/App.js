@@ -55,6 +55,11 @@ const App = () => {
         {isLoading && (
           <h2 style={{ color: "yellow" }}>Loading... Please wait</h2>
         )}
+        {!isLoading && !people?.length > 0 && (
+          <h2 style={{ color: "yellow", fontSize: "30px" }}>
+            A long time ago in a galaxy far, far away…
+          </h2>
+        )}
         {people.length > 0 && (
           <PeoplesList
             people={people}
