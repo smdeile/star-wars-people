@@ -17,14 +17,18 @@ const App = () => {
         const res = await peopleAPI.fetchPeople();
         const people = res.data.results;
         setPeople(people);
-        setLoading(false);
       } catch (err) {
         setError(err);
         setLoading(false);
+      } finally {
+        setLoading(false);
       }
     }
-
-    fetchPeopleFromAPI();
+    setLoading(false);
+    setTimeout(() => {
+      setLoading(true);
+      fetchPeopleFromAPI();
+    }, 2000);
   }, []);
 
   const onSubmit = (data) => {
@@ -48,7 +52,9 @@ const App = () => {
   return (
     <Wrapper>
       <>
-        {isLoading && <h2>Loading... Please wait</h2>}
+        {isLoading && (
+          <h2 style={{ color: "yellow" }}>Loading... Please wait</h2>
+        )}
         {people.length > 0 && (
           <PeoplesList
             people={people}
@@ -56,7 +62,7 @@ const App = () => {
             comments={comments}
           />
         )}
-        {error && <h2>Something went wrong</h2>}
+        {error && <h2 style={{ color: "yellow" }}>Something went wrong</h2>}
       </>
     </Wrapper>
   );

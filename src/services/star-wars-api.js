@@ -1,5 +1,4 @@
 import axios from "axios";
+axios.defaults.baseURL = "https://swapi.dev/api/";
 
-const BASE_URL = "https://swapi.dev/api/people/";
-
-export const fetchPeople = () => axios.get(BASE_URL);
+export const fetchPeople = () => axios.get("people/");
