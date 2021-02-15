@@ -4,6 +4,9 @@ import PeoplesList from "./PeoplesList/PeoplesList";
 import Wrapper from "./Wrapper/Wrapper";
 import { nanoid } from "nanoid";
 
+const stylesTitle = { color: "yellow", fontSize: "30px", textAlign: "center" };
+const styleYellow = { color: "yellow" };
+
 const App = () => {
   const [isLoading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -52,11 +55,9 @@ const App = () => {
   return (
     <Wrapper>
       <>
-        {isLoading && (
-          <h2 style={{ color: "yellow" }}>Loading... Please wait</h2>
-        )}
+        {isLoading && <h2 style={styleYellow}>Loading... Please wait</h2>}
         {!isLoading && !people?.length > 0 && (
-          <h2 style={{ color: "yellow", fontSize: "30px" }}>
+          <h2 style={stylesTitle}>
             A long time ago in a galaxy far, far away…
           </h2>
         )}
@@ -67,7 +68,7 @@ const App = () => {
             comments={comments}
           />
         )}
-        {error && <h2 style={{ color: "yellow" }}>Something went wrong</h2>}
+        {error && <h2 style={styleYellow}>Something went wrong</h2>}
       </>
     </Wrapper>
   );
